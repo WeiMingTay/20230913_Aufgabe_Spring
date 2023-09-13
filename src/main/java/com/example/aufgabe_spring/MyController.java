@@ -11,8 +11,8 @@ public class MyController {
         return "Hello, World";
     }
 
-    @PostMapping("/{name}")
+    @GetMapping("/{name}")
     public String postHello(@PathVariable String name) {
-        return "Hello, "+name;
+        return "Hello, " + name;
     }
 }
